@@ -18,7 +18,7 @@ const Header = () => {
                 </div>
                 <div className='flex items-center md:hidden gap-5'>
                     {Menu.map((item, index) => index < 3 && (
-                        <HeaderItems name={''} Icon={item.icon} />
+                        <HeaderItems key={index} name={''} Icon={item.icon} />
                     ))}
                     <div className='md:hidden' onClick={()=>setToggle(!toggle)}>
                         <HeaderItems name={''} Icon={HiDotsVertical} />
