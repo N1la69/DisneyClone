@@ -1,11 +1,15 @@
 import Header from './Components/Header'
+import ProductionHouse from './Components/ProductionHouse'
 import Slider from './Components/Slider'
 
 function App() {
   return (
-    <div className='bg-[#01137c]'>
+    <div className='bg-[#131520]'>
       <Header />
+
       <Slider />
+      
+      <ProductionHouse />
     </div>
   )
 }
