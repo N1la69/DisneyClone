@@ -4,6 +4,7 @@ import marvel from './marvel.png';
 import nationalG from './nationalG.png';
 import pixar from './pixar.png';
 import starwar from './starwar.png';
+import copyrightSign from './copyrightSign.svg';
 
 export{
     avatar,
@@ -11,5 +12,6 @@ export{
     marvel,
     nationalG,
     pixar,
-    starwar
+    starwar,
+    copyrightSign
 }
