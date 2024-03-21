@@ -19,19 +19,19 @@ const Slider = () => {
   }
 
   const sliderRight = (element) => {
-    element.scrollLeft += screenWidth - 110;
+    element.scrollLeft += screenWidth - 125;
   }
   const sliderLeft = (element) => {
-    element.scrollLeft -= screenWidth - 110;
+    element.scrollLeft -= screenWidth - 125;
   }
 
   return (
     <div>
-      <HiChevronLeft className='hidden md:block text-white text-[30px] absolute mx-8 mt-[200px] cursor-pointer' onClick={() => sliderLeft(elementRef.current)} />
-      <HiChevronRight className='hidden md:block text-white text-[30px] absolute mx-8 mt-[200px] cursor-pointer right-0' onClick={() => sliderRight(elementRef.current)} />
+      <HiChevronLeft className='hidden md:block text-white text-4xl absolute mx-8 mt-[40vh] cursor-pointer' onClick={() => sliderLeft(elementRef.current)} />
+      <HiChevronRight className='hidden md:block text-white text-4xl absolute mx-8 mt-[40vh] cursor-pointer right-0' onClick={() => sliderRight(elementRef.current)} />
       <div className='flex overflow-x-auto w-full px-16 py-4 scrollbar-none scroll-smooth' ref={elementRef}>
         {movieList.map((item) => (
-          <div className='min-w-full md:h-[410px] mr-5 rounded-md hover:border-[4px]
+          <div className='min-w-full md:h-[80vh] mr-5 rounded-md hover:border-[4px]
           border-gray-400 transition-all duration-100 ease-in overflow-hidden'>
             <img src={IMAGE_BASE_URL + item.backdrop_path} alt="img" className='object-cover w-[100%]'/>
           </div>  
